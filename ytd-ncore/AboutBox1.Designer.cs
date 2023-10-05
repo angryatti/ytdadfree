@@ -100,7 +100,7 @@
             labelVersion.Name = "labelVersion";
             labelVersion.Size = new System.Drawing.Size(479, 20);
             labelVersion.TabIndex = 0;
-            labelVersion.Text = "Version 3.1.9b x64";
+            labelVersion.Text = "Version 3.2.3 x64";
             labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             labelVersion.Click += labelVersion_Click;
             // 

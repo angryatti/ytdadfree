@@ -1,4 +1,64 @@
-﻿<root>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema 
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -64,14 +124,23 @@
   <data name="videourltext.Size" type="System.Drawing.Size, System.Drawing">
     <value>311, 23</value>
   </data>
+  <data name="videourltext.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="dwndnconv.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 190</value>
   </data>
   <data name="dwndnconv.Text" xml:space="preserve">
     <value>Letöltés és konvertálás</value>
   </data>
+  <data name="dwndnconv.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="videourl.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 67</value>
+  </data>
+  <data name="videourl.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="comboBox1.Items4" xml:space="preserve">
     <value>aac</value>
@@ -79,17 +148,26 @@
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>518, 193</value>
   </data>
+  <data name="comboBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="convertmanually.Location" type="System.Drawing.Point, System.Drawing">
     <value>412, 190</value>
   </data>
   <data name="convertmanually.Text" xml:space="preserve">
     <value>Konvertálás</value>
   </data>
+  <data name="convertmanually.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="renameandsave.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 257</value>
   </data>
   <data name="renameandsave.Text" xml:space="preserve">
     <value>Áthelyezés és mentés</value>
+  </data>
+  <data name="renameandsave.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="saveFileDialog1.Filter" xml:space="preserve">
     <value>|mp3|*.mp3|mp4|*.mp4|mkv|*.mkv|webm|*.webm|aac|*.aac|</value>
@@ -103,60 +181,72 @@
   <data name="unnessaryfiles.Text" xml:space="preserve">
     <value>Töröljön minden szükségtelen fájlt kilépéskor</value>
   </data>
-  <data name="toolStripSeparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 6</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 6</value>
-  </data>
-  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 6</value>
-  </data>
-  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 22</value>
-  </data>
-  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>E&amp;xit</value>
-  </data>
-  <data name="fileToolStripMenuItem1.Text" xml:space="preserve">
-    <value>&amp;File</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="customizeToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="customizeToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Customize</value>
-  </data>
-  <data name="optionsToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="optionsToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Options</value>
-  </data>
-  <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Tools</value>
-  </data>
-  <data name="aboutToolStripMenuItem1.Text" xml:space="preserve">
-    <value>&amp;About...</value>
-  </data>
-  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Help</value>
+  <data name="unnessaryfiles.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>793, 24</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
+  </data>
+  <data name="menuStrip1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fileToolStripMenuItem2.Text" xml:space="preserve">
+    <value>Fájl</value>
+  </data>
+  <data name="downloadEngineToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 20</value>
+  </data>
+  <data name="downloadEngineToolStripMenuItem.Text" xml:space="preserve">
+    <value>Letöltő motor</value>
+  </data>
+  <data name="toYtdlpDownloadToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 22</value>
+  </data>
+  <data name="toYtdlpDownloadToolStripMenuItem.Text" xml:space="preserve">
+    <value>A yt-dlp letöltése</value>
+  </data>
+  <data name="toYoutubedlDownloadToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 22</value>
+  </data>
+  <data name="toYoutubedlDownloadToolStripMenuItem.Text" xml:space="preserve">
+    <value>A youtube-dl letöltése</value>
+  </data>
+  <data name="nyelvToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 20</value>
+  </data>
+  <data name="nyelvToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Nyelv</value>
+  </data>
+  <data name="angolToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 22</value>
+  </data>
+  <data name="angolToolStripMenuItem1.Text" xml:space="preserve">
+    <value>angol</value>
+  </data>
+  <data name="magyarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 22</value>
+  </data>
+  <data name="magyarToolStripMenuItem1.Text" xml:space="preserve">
+    <value>magyar</value>
+  </data>
+  <data name="névjegyToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 20</value>
+  </data>
+  <data name="névjegyToolStripMenuItem.Text" xml:space="preserve">
+    <value>Névjegy</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fájl</value>
   </data>
   <data name="quitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 22</value>
   </data>
   <data name="quitToolStripMenuItem.Text" xml:space="preserve">
     <value>Kilépés</value>
-  </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Fájl</value>
   </data>
   <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 19</value>
@@ -170,6 +260,12 @@
   <data name="nyelvToolStripMenuItem.Text" xml:space="preserve">
     <value>Nyelv</value>
   </data>
+  <data name="updateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="updateToolStripMenuItem.Text" xml:space="preserve">
+    <value>Frissítés</value>
+  </data>
   <data name="youtubedlToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 22</value>
   </data>
@@ -178,12 +274,6 @@
   </data>
   <data name="ytdlpToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 22</value>
-  </data>
-  <data name="updateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 20</value>
-  </data>
-  <data name="updateToolStripMenuItem.Text" xml:space="preserve">
-    <value>Frissítés</value>
   </data>
   <data name="chooseDownloadEngineToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 20</value>
@@ -200,8 +290,14 @@
   <data name="requrziveloadandcut.Text" xml:space="preserve">
     <value>mp3-betöltése és vágása rekurzivan</value>
   </data>
+  <data name="requrziveloadandcut.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="splittimevalue.Location" type="System.Drawing.Point, System.Drawing">
     <value>265, 490</value>
+  </data>
+  <data name="splittimevalue.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="splitterinsec.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 494</value>
@@ -212,6 +308,9 @@
   <data name="splitterinsec.Text" xml:space="preserve">
     <value>Darabolás másodpercben</value>
   </data>
+  <data name="splitterinsec.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="soundloadandcut.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 440</value>
   </data>
@@ -221,11 +320,20 @@
   <data name="soundloadandcut.Text" xml:space="preserve">
     <value>mp3 betöltése és vágás kezdőponttól végpontig</value>
   </data>
+  <data name="soundloadandcut.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="starttime.Location" type="System.Drawing.Point, System.Drawing">
     <value>148, 405</value>
   </data>
+  <data name="starttime.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="endtime.Location" type="System.Drawing.Point, System.Drawing">
     <value>436, 405</value>
+  </data>
+  <data name="endtime.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="startpoint.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 408</value>
@@ -236,6 +344,9 @@
   <data name="startpoint.Text" xml:space="preserve">
     <value>Kezdőpont</value>
   </data>
+  <data name="startpoint.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="endpoint.Location" type="System.Drawing.Point, System.Drawing">
     <value>324, 408</value>
   </data>
@@ -245,11 +356,17 @@
   <data name="endpoint.Text" xml:space="preserve">
     <value>Végpont</value>
   </data>
+  <data name="endpoint.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="destroydownload.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 224</value>
   </data>
   <data name="destroydownload.Text" xml:space="preserve">
     <value>Letöltött mkv-törlése</value>
+  </data>
+  <data name="destroydownload.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="destroyconvert.Location" type="System.Drawing.Point, System.Drawing">
     <value>412, 224</value>
@@ -260,6 +377,9 @@
   <data name="destroyconvert.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
+  <data name="destroyconvert.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="onlymkvcheck.Location" type="System.Drawing.Point, System.Drawing">
     <value>265, 195</value>
   </data>
@@ -268,6 +388,9 @@
   </data>
   <data name="onlymkvcheck.Text" xml:space="preserve">
     <value>Csak mkv töltsön le</value>
+  </data>
+  <data name="onlymkvcheck.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="authorandsongname.Location" type="System.Drawing.Point, System.Drawing">
     <value>580, 29</value>
@@ -278,8 +401,17 @@
   <data name="authorandsongname.Text" xml:space="preserve">
     <value>Előadó-szám-teszt</value>
   </data>
+  <data name="authorandsongname.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="videotitle.Text" xml:space="preserve">
     <value>Cím</value>
+  </data>
+  <data name="videotitle.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label6.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="urlreset.Location" type="System.Drawing.Point, System.Drawing">
     <value>412, 61</value>
@@ -290,6 +422,9 @@
   <data name="urlreset.Text" xml:space="preserve">
     <value>URL törlése</value>
   </data>
+  <data name="urlreset.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="copyclipboard.Location" type="System.Drawing.Point, System.Drawing">
     <value>640, 61</value>
   </data>
@@ -298,6 +433,9 @@
   </data>
   <data name="copyclipboard.Text" xml:space="preserve">
     <value>Másolás vágólapról</value>
+  </data>
+  <data name="copyclipboard.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="checkvideopic.Location" type="System.Drawing.Point, System.Drawing">
     <value>518, 62</value>
@@ -308,6 +446,9 @@
   <data name="checkvideopic.Text" xml:space="preserve">
     <value>Video előnézete</value>
   </data>
+  <data name="checkvideopic.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="hwaccer.Location" type="System.Drawing.Point, System.Drawing">
     <value>328, 327</value>
   </data>
@@ -316,6 +457,9 @@
   </data>
   <data name="hwaccer.Text" xml:space="preserve">
     <value>Hardveres gyorsítás használata DirectX / CUDA</value>
+  </data>
+  <data name="hwaccer.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="amdgpu.Location" type="System.Drawing.Point, System.Drawing">
     <value>634, 264</value>
@@ -335,6 +479,9 @@
   <data name="addcover.Text" xml:space="preserve">
     <value>Borítókép az mp3-hoz</value>
   </data>
+  <data name="addcover.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="reducedvideo.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 300</value>
   </data>
@@ -344,17 +491,17 @@
   <data name="reducedvideo.Text" xml:space="preserve">
     <value>Csökkentett videóminőség, ami a végső audiófájl minőségének romlásához vezet</value>
   </data>
-  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 127</value>
-  </data>
-  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>601, 27</value>
+  <data name="reducedvideo.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 15</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Folyamat</value>
+  </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="reducedaudio.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 353</value>
@@ -365,6 +512,9 @@
   <data name="reducedaudio.Text" xml:space="preserve">
     <value>Csökkentett hangminőség (128kb)</value>
   </data>
+  <data name="reducedaudio.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="autoshutdownbn.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 562</value>
   </data>
@@ -373,6 +523,9 @@
   </data>
   <data name="autoshutdownbn.Text" xml:space="preserve">
     <value>Számítógép leállítása. amint a konvertálást befejezte!</value>
+  </data>
+  <data name="autoshutdownbn.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="cBaactrue.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 327</value>
@@ -383,11 +536,17 @@
   <data name="cBaactrue.Text" xml:space="preserve">
     <value>Konvertálás változó Bitráta (VBR) mód (ha AAC)</value>
   </data>
+  <data name="cBaactrue.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="makevideofromaudio.Location" type="System.Drawing.Point, System.Drawing">
     <value>470, 562</value>
   </data>
   <data name="makevideofromaudio.Text" xml:space="preserve">
     <value>Videó hangfájlból.</value>
+  </data>
+  <data name="makevideofromaudio.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="engineytd.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 164</value>
@@ -398,6 +557,9 @@
   <data name="engineytd.Text" xml:space="preserve">
     <value>Szeretném használni az új letöltő motort! YT-dlp -t</value>
   </data>
+  <data name="engineytd.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="fbookdown.Location" type="System.Drawing.Point, System.Drawing">
     <value>351, 164</value>
   </data>
@@ -406,6 +568,18 @@
   </data>
   <data name="fbookdown.Text" xml:space="preserve">
     <value>A facebook-ról szeretnék letölteni és nem a YouTube-ról.</value>
+  </data>
+  <data name="fbookdown.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 127</value>
+  </data>
+  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>601, 27</value>
+  </data>
+  <data name="progressBar1.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>793, 591</value>
@@ -2493,6 +2667,9 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Youtube Downloader &amp; Splitter v3.1.9b Ad-free &amp; Free</value>
+    <value>Youtube Downloader &amp; Splitter v3.2.3 Ad-free &amp; Free</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>

@@ -6,6 +6,7 @@ using System.Globalization;
 using System.Threading;
 using System.Drawing;
 using System.Net;
+using System.ComponentModel;
 //ing System.Management;
 //using System.Net.Http.WebRequest;
 
@@ -16,9 +17,17 @@ namespace ytd_ncore
         public Form1()
         {
             InitializeComponent();
+
         }
         string settingsengine;
-
+        private void ChangeLanguage(string lang)
+        {
+            foreach (Control c in this.Controls)
+            {
+                ComponentResourceManager resources = new ComponentResourceManager(typeof(Form1));
+                resources.ApplyResources(c, c.Name, new CultureInfo(lang));
+            }
+        }
 
         private void dwndnconv_Click(object sender, EventArgs e)
         {
@@ -760,12 +769,13 @@ namespace ytd_ncore
             {
 
 
-                saveFileDialog1.FileName = label6.Text;
+                saveFileDialog1.FileName = label6.Text + "." + comboBox1.SelectedText;
 
 
                 if (System.IO.File.Exists("finalfile.mp3"))
                 {
                     saveFileDialog1.FileName = label6.Text + ".mp3";
+                    saveFileDialog1.FilterIndex = 0;
 
                 }
                 if (System.IO.File.Exists("finalfile.aac"))
@@ -982,6 +992,7 @@ namespace ytd_ncore
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             angolToolStripMenuItem.Enabled = true;
             comboBox1.SelectedIndex = 0;
 
@@ -1007,7 +1018,7 @@ namespace ytd_ncore
 
                     MessageBox.Show("A youtube-dl.exe fájlt le kell töltenije a programnak! / The program is downloading the youtube-dl.exe");
 
-                    string remoteUri = "https://youtube-dl.org/downloads/latest/";
+                    string remoteUri = "https://github.com/ytdl-org/youtube-dl/releases/download/2021.12.17/";
                     string fileName = "youtube-dl.exe";
                     WebClient myWebClient = new WebClient();
                     string myStringWebResource = remoteUri + fileName;
@@ -1179,34 +1190,11 @@ namespace ytd_ncore
             }
         }
 
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void youtubedlToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (System.IO.File.Exists("youtube-dl.exe"))
-            {
-                System.IO.File.Delete("youtube-dl.exe");
 
-                MessageBox.Show("A youtube-dl legfrisebb verziója letöltésre kerül");
 
-                string remoteUri = "https://youtube-dl.org/downloads/latest/";
-                string fileName = "youtube-dl.exe";
-                System.Net.WebClient myWebClient = new System.Net.WebClient();
-                string myStringWebResource = remoteUri + fileName;
 
-                myWebClient.DownloadFile(myStringWebResource, fileName);
-
-                MessageBox.Show("Letöltés befejeződött!");
-            }
-        }
-
-        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
 
 
@@ -1331,9 +1319,25 @@ namespace ytd_ncore
             }
         }
 
-        private void ytdlpToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
 
+
+        private void fbookdown_CheckedChanged(object sender, EventArgs e)
+        {
+            if (fbookdown.Checked == true)
+            {
+                onlymkvcheck.Checked = true;
+            }
+            else
+            {
+                onlymkvcheck.Checked = false;
+            }
+        }
+
+
+
+
+        private void toYtdlpDownloadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             if (System.IO.File.Exists("yt-dlp.exe"))
             {
                 if (!System.IO.File.Exists("yt-dlp.exe.bak"))
@@ -1342,7 +1346,7 @@ namespace ytd_ncore
                 }
                 System.IO.File.Delete("yt-dlp.exe");
 
-                MessageBox.Show("yt-dlp-ből a legfrisebb verziója letöltésre kerül / The Latest youtube-dl has been started and downloaded ");
+                MessageBox.Show("yt-dlp-ből a legfrisebb verziója letöltésre kerül / The Latest yt-dlp has been started and downloaded ");
 
                 string remoteUri = "https://github.com/yt-dlp/yt-dlp/releases/latest/download/";
                 string fileName = "yt-dlp.exe";
@@ -1359,38 +1363,42 @@ namespace ytd_ncore
                 }
 
 
-
             }
-
         }
 
-        private void fbookdown_CheckedChanged(object sender, EventArgs e)
+        private void toYoutubedlDownloadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (fbookdown.Checked == true)
+            if (System.IO.File.Exists("youtube-dl.exe"))
             {
-                onlymkvcheck.Checked = true;
-            }
-            else
-            {
-                onlymkvcheck.Checked = false;
+                System.IO.File.Delete("youtube-dl.exe");
+
+                MessageBox.Show("A youtube-dl legfrisebb verziója letöltésre kerül 2021 (eléggé elavult) / The latest youtube-dl downloads in progress but it is out of date");
+
+                string remoteUri = "https://youtube-dl.org/downloads/latest/";
+                string fileName = "youtube-dl.exe";
+                System.Net.WebClient myWebClient = new System.Net.WebClient();
+                string myStringWebResource = remoteUri + fileName;
+
+                myWebClient.DownloadFile(myStringWebResource, fileName);
+
+                MessageBox.Show("Letöltés befejeződött!");
             }
         }
 
-        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void névjegyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AboutBox1 a = new AboutBox1();
             a.Show();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void angolToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
-            this.Close();
+            ChangeLanguage("en");
         }
 
-        private void toolsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void magyarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            ChangeLanguage("hu-Hu");
         }
     }
 }
