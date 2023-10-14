@@ -763,7 +763,7 @@ namespace ytd_ncore
         {
 
             string fileName = "finalfile." + comboBox1.Text;
-
+            saveFileDialog1.FilterIndex = 0;
 
             if ((System.IO.File.Exists(fileName) || (System.IO.File.Exists("downloadedfile.mp4") || (System.IO.File.Exists("downloadedfile.mkv") || (System.IO.File.Exists("downloadedfile.webm"))))))
             {
@@ -808,7 +808,6 @@ namespace ytd_ncore
                 if (saveFileDialog1.ShowDialog() == DialogResult.OK)
 
                 {
-
 
                     System.IO.File.Copy(fileName, saveFileDialog1.FileName, true);
 
@@ -987,7 +986,6 @@ namespace ytd_ncore
                 System.IO.File.Delete("info2.txt");
             if (System.IO.File.Exists("ytd.bat"))
                 System.IO.File.Delete("ytd.bat");
-            //      }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -1005,7 +1003,7 @@ namespace ytd_ncore
 
             }
             readfile.Close();
-            //  label6.Text = settingsengine;
+        
             if (settingsengine != "Engine=Default" && System.IO.File.Exists("youtube-dl.exe"))
             {
                 engineytd.Checked = true;
@@ -1054,35 +1052,14 @@ namespace ytd_ncore
             Console.WriteLine("ExitCode: {0}", process.ExitCode);
             process.Close();
         }
-        private void angolToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            videourltext.Text = "";
-        }
+     
 
         private void urlreset_Click(object sender, EventArgs e)
         {
             videourltext.Text = "";
         }
 
-        private void magyarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("hu-HU");
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("hu-HU");
-
-        }
-
-        private void unnessaryfiles_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
 
 
 
@@ -1099,11 +1076,6 @@ namespace ytd_ncore
 
 
 
-
-        }
-
-        private void nyelvToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -1150,11 +1122,6 @@ namespace ytd_ncore
             this.Hide();
 
 
-
-        }
-
-        private void hwaccer_CheckedChanged(object sender, EventArgs e)
-        {
 
         }
 
@@ -1234,34 +1201,12 @@ namespace ytd_ncore
 
             }
         }
-
-        private void reducedvideo_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void saveFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-
-        }
-
         private void addcover_CheckedChanged(object sender, EventArgs e)
         {
             if (addcover.Checked)
             {
                 comboBox1.Text = "mp3";
                 cBaactrue.Checked = false;
-
-            }
-            else
-            {
-
-
 
             }
         }

@@ -74,11 +74,13 @@ namespace ytd_ncore
             // 
             openFileDialog1.DefaultExt = "jpg";
             openFileDialog1.FileName = "openFileDialog1";
+            resources.ApplyResources(openFileDialog1, "openFileDialog1");
             // 
             // openFileDialog2
             // 
             openFileDialog2.DefaultExt = "mp3|aac";
             openFileDialog2.FileName = "openFileDialog2";
+            resources.ApplyResources(openFileDialog2, "openFileDialog2");
             // 
             // makemp4
             // 
@@ -89,10 +91,10 @@ namespace ytd_ncore
             // 
             // formatfilter
             // 
+            resources.ApplyResources(formatfilter, "formatfilter");
             formatfilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             formatfilter.FormattingEnabled = true;
             formatfilter.Items.AddRange(new object[] { resources.GetString("formatfilter.Items"), resources.GetString("formatfilter.Items1") });
-            resources.ApplyResources(formatfilter, "formatfilter");
             formatfilter.Name = "formatfilter";
             // 
             // goback
@@ -101,6 +103,10 @@ namespace ytd_ncore
             goback.Name = "goback";
             goback.UseVisualStyleBackColor = true;
             goback.Click += goback_Click;
+            // 
+            // saveFileDialog1
+            // 
+            resources.ApplyResources(saveFileDialog1, "saveFileDialog1");
             // 
             // previewofload
             // 

@@ -120,7 +120,6 @@
             comboBox1.Items.AddRange(new object[] { resources.GetString("comboBox1.Items"), resources.GetString("comboBox1.Items1"), resources.GetString("comboBox1.Items2"), resources.GetString("comboBox1.Items3"), resources.GetString("comboBox1.Items4"), resources.GetString("comboBox1.Items5") });
             resources.ApplyResources(comboBox1, "comboBox1");
             comboBox1.Name = "comboBox1";
-            comboBox1.SelectedValueChanged += comboBox1_SelectedValueChanged;
             // 
             // convertmanually
             // 
@@ -140,7 +139,7 @@
             // 
             saveFileDialog1.FileName = "nevezzat.mp3";
             resources.ApplyResources(saveFileDialog1, "saveFileDialog1");
-            saveFileDialog1.FileOk += saveFileDialog1_FileOk;
+            saveFileDialog1.FilterIndex = 0;
             // 
             // unnessaryfiles
             // 
@@ -149,7 +148,7 @@
             unnessaryfiles.CheckState = System.Windows.Forms.CheckState.Checked;
             unnessaryfiles.Name = "unnessaryfiles";
             unnessaryfiles.UseVisualStyleBackColor = true;
-            unnessaryfiles.CheckedChanged += unnessaryfiles_CheckedChanged;
+       
             // 
             // menuStrip1
             // 
@@ -226,19 +225,17 @@
             nyelvToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { angolToolStripMenuItem, magyarToolStripMenuItem });
             resources.ApplyResources(nyelvToolStripMenuItem, "nyelvToolStripMenuItem");
             nyelvToolStripMenuItem.Name = "nyelvToolStripMenuItem";
-            nyelvToolStripMenuItem.Click += nyelvToolStripMenuItem_Click;
             // 
             // angolToolStripMenuItem
             // 
             angolToolStripMenuItem.Name = "angolToolStripMenuItem";
             resources.ApplyResources(angolToolStripMenuItem, "angolToolStripMenuItem");
-            angolToolStripMenuItem.Click += angolToolStripMenuItem_Click;
             // 
             // magyarToolStripMenuItem
             // 
             magyarToolStripMenuItem.Name = "magyarToolStripMenuItem";
             resources.ApplyResources(magyarToolStripMenuItem, "magyarToolStripMenuItem");
-            magyarToolStripMenuItem.Click += magyarToolStripMenuItem_Click;
+   
             // 
             // updateToolStripMenuItem
             // 
@@ -384,7 +381,6 @@
             resources.ApplyResources(hwaccer, "hwaccer");
             hwaccer.Name = "hwaccer";
             hwaccer.UseVisualStyleBackColor = true;
-            hwaccer.CheckedChanged += hwaccer_CheckedChanged;
             // 
             // amdgpu
             // 
@@ -416,7 +412,6 @@
             resources.ApplyResources(reducedvideo, "reducedvideo");
             reducedvideo.Name = "reducedvideo";
             reducedvideo.UseVisualStyleBackColor = true;
-            reducedvideo.CheckedChanged += reducedvideo_CheckedChanged;
             // 
             // label1
             // 

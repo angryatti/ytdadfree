@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="asdv111.ico" />
+    <None Include="bin\Release\net7.0-windows\publish\win-x64\hungarian.lng" />
     <None Include="bin\x64\Release\cuda.png" />
     <None Include="bin\x64\Release\amdgpu.png" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -145,5 +146,10 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Form1.aa.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Form1.hu-HU.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
